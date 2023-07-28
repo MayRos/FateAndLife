@@ -85,7 +85,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="BaseEntity.h" />
+    <ClInclude Include="CharacterEntity.h" />
     <ClInclude Include="entity_global.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="BaseEntity.cpp" />
+    <ClCompile Include="CharacterEntity.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">
