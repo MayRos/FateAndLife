@@ -5,6 +5,7 @@ FateAndLife::FateAndLife(QWidget *parent)
     , ui(new Ui::FateAndLifeClass())
 {
     ui->setupUi(this);
+
 }
 
 FateAndLife::~FateAndLife()
