@@ -1,6 +1,6 @@
 #include "Database.h"
 
-void Database::InitDatabase()
+void Database::ConnectDatabase()
 {
     db.setHostName("127.0.0.1"); //连接本地主机
     db.setPort(3306);
@@ -18,4 +18,14 @@ Database::Database()
 {
    
 
+}
+
+Database::~Database()
+{
+}
+
+Database& Database::Instance()
+{
+    static Database instance;
+    return instance;
 }

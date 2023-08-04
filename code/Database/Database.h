@@ -7,9 +7,12 @@
 class DATABASE_EXPORT Database
 {
     QSqlDatabase db;
-    void InitDatabase();
-public:
+    void ConnectDatabase();
+
     Database();
+    ~Database();
+public:
+    static Database& Instance();
 };
 
 #endif // !DATABASE_H
