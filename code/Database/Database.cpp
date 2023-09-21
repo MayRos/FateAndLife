@@ -1,4 +1,5 @@
 #include "Database.h"
+#include<QSqlError>
 
 void Database::ConnectDatabase()
 {
@@ -9,14 +10,14 @@ void Database::ConnectDatabase()
     db.setPassword("admin123");
     bool ok = db.open();
     if (!ok)  {
-        qDebug() << "error open database because" << db.lastError().text();
+        //qDebug() << "error open database because" << db.lastError().text();
     }
 }
 
 Database::Database()
     :db(QSqlDatabase::addDatabase("QMYSQL"))
 {
-   
+    ConnectDatabase();
 
 }
 

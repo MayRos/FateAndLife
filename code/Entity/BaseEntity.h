@@ -5,6 +5,11 @@
 */
 class BaseEntity
 {
+public:
+    /*
+    * 功能描述：抛掷一个max面的骰子获得的点数
+    */
+    int GetGuidanceOfFate(int max);
 protected:
     BaseEntity();
     ~BaseEntity();
